@@ -1,3 +1,4 @@
+<!--This file was made by ME! Kyle, in the year of twenty twetny too-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,15 +10,25 @@
 		<link rel="stylesheet" href="css/styles.css">
         
 		<!--you can also place internal styles here; you would place these within <style> tags-->
+        <!-- link to leaflet styles -->
+        <link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css" />
+        <!-- link to leaflet scripts -->
+        <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
     </head>
 
     <body>
         <!--put your initial page content here-->
-		
+		<div id="div1">
+            <p>2. The JS script is loaded at the end of the file so that styling and content can be loaded first before any script can slow down the process.</p>
+            <p>3. Onload will allow the JS script to run once the the rest of the content is completely loaded. So in this case when onload is triggered it will run the function "initialize()".</p>
+            <p>4. cityPop is an array, this array contains objects that are both strings and numbers.</p>
+        </div>
+        <div id="mapdiv">
+        </div>
         <!--you can also use this space for internal scripts; you would place these within <script> tags-->
 
         <!--put your external script links here-->
+        <script type="text/javascript" src="data/megacities.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="data/megacities.js"></script>
     </body>
 </html>
